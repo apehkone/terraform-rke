@@ -21,10 +21,16 @@ docker run -it -v `pwd`:/wrk -w /wrk --entrypoint /bin/sh terraform-rke
 Starts the container, maps current directory as working directory and runs a command **-c ls -la**
 
 ```bash
-docker run -v `pwd`:/wrk -w /wrk --entrypoint /bin/sh tf-rke -c ls -la
+docker run -v `pwd`:/wrk -w /wrk --entrypoint /bin/sh terraform-rke -c ls -la
 ```
 
+Run terraform commands directly 
 
+```bash
+docker run -v `pwd`:/wrk -w /wrk terraform-rke <command> <options> [DIR]
+
+## Example: rancher-deploy % docker run -v `pwd`:/wrk -w /wrk terraform-rke init -backend=false src/environments/dev
+```
 
 
 
