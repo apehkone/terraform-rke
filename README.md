@@ -1,6 +1,6 @@
 # terraform-rke
 
-Terraform docker image with installed RKE provider. This can be useful when it's not practical to install Terraform locally (e.g. ci/cd build pipelines). 
+Terraform docker image with installed RKE (Rancher Kubernetes Engine) provider. This can be useful when it's not practical to install Terraform locally (e.g. ci/cd build pipelines). 
 
 
 ## Build image locally
