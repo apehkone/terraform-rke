@@ -18,7 +18,11 @@ docker run -it -v `pwd`:/wrk -w /wrk --entrypoint /bin/sh terraform-rke
 
 ```
 
+Starts the container, maps current directory as working directory and runs a command **-c ls -la**
 
+```bash
+docker run -v `pwd`:/wrk -w /wrk --entrypoint /bin/sh tf-rke -c ls -la
+```
 
 
 
